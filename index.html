@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Reader</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body class="fondo">
+    <h1>Inventario de cerveza</h1>
+    
+    <table id="csvTable">
+
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>tamaño</th>
+                <th>marca</th>
+                <th>volumen de alcohol</th>
+                <th>capacidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table body will be populated dynamically -->
+        </tbody>
+    </table>
+    <div>
+        <input type="text" id="Nombre" placeholder="ingresa el nombre de la bebida">
+        <input type="text" id="tamaño" placeholder="ingresa el tamaño de la bebida">
+        <input type="text" id="marca" placeholder="ingresa la marca de la bebida">
+        <input type="float" id="volumen" placeholder="ingresa el volumen de la bebida">
+        <input type="int" id="capacidad" placeholder="ingresa la capacidad de la bebida">
+        <button onclick="IngresaDatos()">agregar bebida</button>
+
+    </div>
+    <div>
+        <button class="btn" onclick="Eliminartablacompleta()">Eliminar tabla</button>
+    </div>
+
+
+    <input type="file" accept=".csv">
+
+</body>
+<script src="app.js"></script>
+
+</html>

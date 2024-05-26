@@ -1,0 +1,26 @@
+body{
+    background: rgb(191, 157, 19);
+    background: linear-gradient(90deg, rgb(122, 23, 193) 0%, rgb(153, 231, 101) 29%, rgb(255, 55, 0) 79%);
+}
+
+.btn:hover{
+    background-color: #31ac54;
+}
+
+.fondo{
+    background-image: url(imagenes/como-el-alcoholismo-destruye-a-la-familia.webp);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form-container {
+    display: grid;
+    gap: 10px; 
+}
+
+.flex-container img {
+    margin-right: 10px;
+}
